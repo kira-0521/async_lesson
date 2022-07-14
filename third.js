@@ -9,7 +9,9 @@ const sleep = (cb, seconds) => {
 sleep((seconds) => {
   sleep((seconds) => {
     sleep((seconds) => {
-      sleep((seconds) => console.log(`${seconds}ms Done`), seconds)
+      sleep((seconds) => {
+        sleep((seconds) => {}, seconds)
+      }, seconds)
     }, seconds)
   }, seconds)
 }, 500)

@@ -1,16 +1,13 @@
-const sleep = (cb) => {
+const a = () => {
+  console.log('a')
   setTimeout(() => {
-    console.log(' one ')
-    cb()
+    console.log('setTimeout done')
   }, 1000)
 }
 
-sleep(() => {
-  console.log(' two ')
-})
-// console.log('three')
+const b = () => {
+  console.log('b')
+}
 
-// 以下を順番に出力するには？
-// sleep()
-// sleep()
-// sleep()
+a()
+b()
