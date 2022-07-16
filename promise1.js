@@ -17,3 +17,6 @@ sleep()
   .then(() => {
     return sleep()
   })
+  .then(() => {
+    return sleep()
+  })

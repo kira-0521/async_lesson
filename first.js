@@ -1,17 +1,17 @@
-const fetchUsers = () => {
-  axios.get('https://jsonplaceholder.typicode.com/users').then(() => {
-    console.log(' two ')
-  })
+const sleep = () => {
+  setTimeout(() => console.log(' tow '), 1000)
 }
 
 console.log(' one ')
-fetchUsers()
+sleep()
 console.log(' three ')
 
-// const sleep = () => {
-//   setTimeout(() => console.log(' tow '), 1000)
+// const fetchUsers = () => {
+//   axios.get('https://jsonplaceholder.typicode.com/users').then(() => {
+//     console.log(' two ')
+//   })
 // }
 
 // console.log(' one ')
-// sleep()
+// fetchUsers()
 // console.log(' three ')
