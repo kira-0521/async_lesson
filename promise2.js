@@ -1,8 +1,10 @@
+// promiseの構文
 const sleep = () => {
+  setLoading(true)
   return new Promise((resolve, reject) => {
-    setTimeout(() => {
+    window.setTimeout(() => {
       console.log('sleep done')
-      reject()
+      resolve()
     }, 1000)
   })
 }
@@ -15,5 +17,6 @@ sleep()
     console.log('catch')
   })
   .finally(() => {
+    setLoading(false)
     console.log('finally')
   })

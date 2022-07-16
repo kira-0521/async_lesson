@@ -1,8 +1,10 @@
+// thirdをpromiseで書くには
 const sleep = () => {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
       console.log('sleep done')
-      resolve()
+      resolve('resolve')
+      reject('reject')
     }, 1000)
   })
 }

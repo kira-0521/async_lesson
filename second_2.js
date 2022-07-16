@@ -1,10 +1,10 @@
 // 以下を順番に出力するには？
 setTimeout(() => {
   console.log('one')
-}, 1000)
-setTimeout(() => {
-  console.log('two')
-}, 1000)
-setTimeout(() => {
-  console.log('three')
+  setTimeout(() => {
+    console.log('two')
+    setTimeout(() => {
+      console.log('three')
+    }, 1000)
+  }, 1000)
 }, 1000)

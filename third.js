@@ -1,18 +1,17 @@
-const sleep = (cb, seconds) => {
+const sleep = (unko, seconds) => {
   setTimeout(() => {
     console.log(`${seconds++}ms`)
-    cb(seconds)
+    unko(seconds)
   }, seconds)
 }
 
 sleep((seconds) => {
+  console.log('unko')
   sleep((seconds) => {
     sleep((seconds) => {
       sleep((seconds) => {
         sleep((seconds) => {
-          sleep((seconds) => {
-            sleep((seconds) => {}, seconds)
-          }, seconds)
+          sleep((seconds) => {}, seconds)
         }, seconds)
       }, seconds)
     }, seconds)

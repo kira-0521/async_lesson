@@ -1,3 +1,4 @@
+// async / await
 const sleep = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -14,4 +15,6 @@ const asyncFn = async () => {
   await sleep()
 }
 
-asyncFn()
+asyncFn().then(() => {
+  console.log('promise done')
+})

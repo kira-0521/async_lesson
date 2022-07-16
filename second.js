@@ -1,7 +1,8 @@
+// １秒経過後にbを実行するには
 const a = () => {
   console.log('a')
 
-  window.setTimeout(() => {
+  setTimeout(() => {
     console.log('１秒経過')
   }, 1000)
 }
