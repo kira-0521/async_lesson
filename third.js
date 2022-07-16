@@ -5,12 +5,15 @@ const sleep = (cb, seconds) => {
   }, seconds)
 }
 
-// cb地獄
 sleep((seconds) => {
   sleep((seconds) => {
     sleep((seconds) => {
       sleep((seconds) => {
-        sleep((seconds) => {}, seconds)
+        sleep((seconds) => {
+          sleep((seconds) => {
+            sleep((seconds) => {}, seconds)
+          }, seconds)
+        }, seconds)
       }, seconds)
     }, seconds)
   }, seconds)

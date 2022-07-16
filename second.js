@@ -1,7 +1,9 @@
-const a = () => {
+const a = (cb) => {
   console.log('a')
-  setTimeout(() => {
-    console.log('setTimeout done')
+
+  window.setTimeout(() => {
+    console.log('１秒待ったよ')
+    cb()
   }, 1000)
 }
 
@@ -9,5 +11,4 @@ const b = () => {
   console.log('b')
 }
 
-a()
-b()
+a(b)
